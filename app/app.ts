@@ -36,7 +36,42 @@ document.getElementById('addstudent')!.addEventListener('click' ,  () =>{
     newstudent.studentclass=Number(getInputValue('Class'));
     newstudent.favouritesubject=getInputValue('subject');
     newstudent.school_name=getInputValue('schoolname');
-    console.log(studentdata);
-    studentdata.push(newstudent);
+           console.log(studentdata);
+           studentdata.push(newstudent);
 
-});
+           
+        //If the validation function is called the console screen flashes out.
+            /*function validatefields(){
+                if(newstudent.name == ""){
+                    alert("Please Enter your Name!");
+                    return false;
+                }
+                else if(newstudent.age == null){
+                    alert("Please Enter your Age!");
+                    return false;
+        
+                }
+        
+                else if(newstudent.studentclass==null){
+                    alert("Please Enter your Class");
+                    return false;
+                }
+        
+                else if(newstudent.favouritesubject==""){
+                    alert("Please Enter your favourite subject!");
+                    return false;
+                }
+        
+                else if(newstudent.school_name==""){
+                    alert("Please Enter your School Name!");
+                    return false;
+                }
+        
+                return true;
+            }
+            if(validatefields()===true){
+               
+                studentdata.push(newstudent);
+                    console.log(studentdata);}*/
+   });
+
